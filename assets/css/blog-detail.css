@@ -55,9 +55,6 @@ nav .nav-left ul li a.active {
     margin: auto;
     padding: 10px;
 }
-.title {
-    /* background-color: chartreuse; */
-}
 .title h1 {
     text-transform: capitalize;
     text-align: center;
@@ -121,9 +118,6 @@ nav .nav-left ul li a.active {
     height: 25px;
     margin-right: 11px;
     /* background-color: white; */
-}
-.content {
-    /* background-color: blue; */
 }
 .content p {
     text-align: justify;

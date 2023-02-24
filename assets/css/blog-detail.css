@@ -1,0 +1,131 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    background-color: #DCE0E4;
+}
+/* NAVBAR */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F4F3F3;
+}
+nav .nav-left {
+    margin-left: 130px;
+
+}
+nav .nav-left ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    padding: 0;
+}
+nav .nav-left ul li {
+    margin-right: 20px;
+}
+nav .nav-left ul li img {
+    width: 30px;
+    background-color: red;
+    padding: 5px;
+}
+nav .nav-left ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+nav .nav-right {
+    background-color: black;
+    padding: 10px;
+    border-radius: 10px;
+    margin-right: 130px;
+}
+nav .nav-right a {
+    color: white;
+    text-decoration: none;
+}
+nav .nav-left ul li a.active {
+    font-weight: bold;
+}
+/* END NAVBAR */
+
+/* BLOG DETAIL CSS */
+.container {
+    /* background-color: yellow; */
+    width: 750px;
+    margin: auto;
+    padding: 10px;
+}
+.title {
+    /* background-color: chartreuse; */
+}
+.title h1 {
+    text-transform: capitalize;
+    text-align: center;
+}
+.head {
+    /* background-color: aqua; */
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.head .image {
+    width: 57%;
+}
+.head .image img {
+    width: 100%;
+}
+.head .detail {
+    /* background-color: darksalmon; */
+    width: 40%;
+}
+.head .detail .detail-item {
+    margin-bottom: 20px;
+}
+.detail .detail-item h3, .detail .detail-item h5 {
+    margin: 0;
+    margin-bottom: 5px;
+    /* padding: 0; */
+}
+.detail .detail-item div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+.detail .detail-item div img {
+    width: 25px;
+    height: 25px;
+    margin-right: 11px;
+}
+.detail .detail-item-2 h3 {
+    margin: 0;
+    padding: 0;
+}
+.tag {
+    display: flex;
+    flex-wrap: wrap;
+}
+.tag-tech {
+    display: flex;
+    flex-direction: row;
+    /* background-color: lawngreen; */
+    margin: 5px 3px;
+    width: 48%;
+    align-items: center;
+}
+.tag-tech h4 {
+    margin: 0;
+    padding: 0;
+}
+.tag-tech img {
+    width: 25px;
+    height: 25px;
+    margin-right: 11px;
+    /* background-color: white; */
+}
+.content {
+    /* background-color: blue; */
+}
+.content p {
+    text-align: justify;
+}
+/* END BLOG DETAIL CSS */

@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <title>Day 2 - Form And Navbar</title>
+        <link rel="stylesheet" href="./assets/css/style.css">
+    </head>
+    <body>
+        <nav>
+            <div class="nav-left">
+                <ul>
+                    <li><img src="./assets/images/brand.png" alt="Logo Dumbways"></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="blog.html">Project</a></li>
+                </ul>
+            </div>
+            <div class="nav-right">
+                <a href="contact-form.html">Contact me</a>
+            </div>
+        </nav>
+        <div class="container">
+            <h1>GET IN TOUCH</h1>
+            <form>
+                <div>
+                    <label for="name">Nama</label>
+                    <input id="name" type="text">
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input id="email" type="email">
+                </div>
+                <div>
+                    <label for="phone">Phone Number</label>
+                    <input id="phone" type="number">
+                </div>
+                <div>
+                    <label for="subject">Subject</label>
+                    <select id="subject" name="subject">
+                        <option selected></option>
+                        <option>Collaboration</option>
+                        <option>Discussion</option>
+                        <option>Hiring</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="message">Your Message</label>
+                    <textarea id="message"></textarea>
+                </div>
+                <div class="submit">
+                    <button type="button" onclick="getData()">Submit</button>
+                </div>
+            </form>
+        </div>
+        <script src="./assets/js/script.js"></script>
+    </body>
+</html>

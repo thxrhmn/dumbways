@@ -1,0 +1,197 @@
+<html>
+    <head>
+        <title>Day 4 - Creating Blog Page</title>
+        <link rel="stylesheet" href="./assets/css/blog.css">
+    </head>
+    <body>
+        <nav>
+            <div class="nav-left">
+                <ul>
+                    <li><img src="./assets/images/brand.png" alt="Logo Dumbways"></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="blog.html" class="active">Project</a></li>
+                </ul>
+            </div>
+            <div class="nav-right">
+                <a href="contact-form.html">Contact me</a>
+            </div>
+        </nav>
+        <div class="container">
+            <h1>ADD MY PROJECT</h1>
+            <form onsubmit="getData(event)">
+                <div class="form-item">
+                    <label for="projectname">Project Name</label>
+                    <input id="projectname" type="text">
+                </div>
+                <div class="form-item-date">
+                    <div class="date-item">
+                        <label for="startdate">Start Date</label>
+                        <input id="startdate" type="date">
+                    </div>
+                    <div class="date-item">
+                        <label for="enddate">End Date</label>
+                        <input id="enddate" type="date">
+                    </div>
+                </div>
+                <div class="form-item">
+                    <label for="description">Description</label>
+                    <textarea class="description" id="description"></textarea>
+                </div>
+                <div class="form-item">
+                    <label for="tech">Technologies</label>
+                    <div class="tech">
+                        <div class="tech-item">
+                            <input type="checkbox" id="nodejs" name="nodejs" value="Node Js">
+                            <label for="nodejs">Node Js</label>
+                        </div>
+                        <div class="tech-item">
+                            <input type="checkbox" id="nextjs" name="nextjs">
+                            <label for="nextjs">Next Js</label>
+                        </div>
+                        <div class="tech-item">
+                            <input type="checkbox" id="reactjs" name="reactjs">
+                            <label for="reactjs">React Js</label>
+                        </div>
+                        <div class="tech-item">
+                            <input type="checkbox" id="typescript" name="typescript">
+                            <label for="typescript">Typescript</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-item">
+                    <label for="file">Upload Image</label>
+                    <input id="blog-img" type="file">
+                </div>
+                <div class="submit">
+                    <button>Submit</button>
+                </div>
+            </form>
+        </div>
+        <div class="container2">
+            <h1 class="head">MY PROJECT</h1>
+            <div class="container-blog" id="contents">
+                <div class="card-post">
+                    <img class="post-img" src="./assets/images/spotify.webp">
+                    <div class="title-date">
+                        <h1 class="title">Spotify Clone 2023</h1>
+                        <h3 class="date">Durasi : 2 bulan</h3>
+                    </div>
+                    <div class="post-content">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste autem sunt iusto aliquamIste autem sunt iusto aliquamIste autem sunt iusto aliquamIste autem sunt iusto aliquamIste autem sunt iusto aliquamIste autem sunt iusto aliquamIste autem sunt iusto aliquamIste autem sunt iusto aliquam</p>
+                    </div>
+                    <div class="tag-tech" id="tag-tech" >
+                        <img src="./assets/icons/nextjs.png" alt="">
+                        <img src="./assets/icons/nodejs.png" alt="">
+                        <img src="./assets/icons/typescript.png" alt="">
+                        <img src="./assets/icons/reactjs.png" alt="" style="width:28px;">
+                    </div>
+                    <div class="post-button">
+                        <button class="edit">Edit</button>
+                        <button class="delete">Delete</button>
+                    </div>
+                </div>
+                <div class="card-post">
+                    <img class="post-img" src="./assets/images/netflix.webp">
+                    <div class="title-date">
+                        <h1 class="title">Netflix Clone 2023</h1>
+                        <h3 class="date">Durasi : 2 bulan</h3>
+                    </div>
+                    <div class="post-content">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste autem sunt iusto aliquam</p>
+                    </div>
+                    <div class="tag-tech" id="tag-tech" >
+                        <img src="./assets/icons/nextjs.png" alt="">
+                        <img src="./assets/icons/nodejs.png" alt="">
+                        <img src="./assets/icons/typescript.png" alt="">
+                        <img src="./assets/icons/reactjs.png" alt="" style="width:28px;">
+                    </div>
+                    <div class="post-button">
+                        <button class="edit">Edit</button>
+                        <button class="delete">Delete</button>
+                    </div>
+                </div>
+                <div class="card-post">
+                    <img class="post-img" src="./assets/images/terminalchat.png">
+                    <div class="title-date">
+                        <h1 class="title">Terminal chat</h1>
+                        <h3 class="date">Durasi : 2 bulan</h3>
+                    </div>
+                    <div class="post-content">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste autem sunt iusto aliquam</p>
+                    </div>
+                    <div class="tag-tech" id="tag-tech" >
+                        <img src="./assets/icons/nextjs.png" alt="">
+                        <img src="./assets/icons/nodejs.png" alt="">
+                        <img src="./assets/icons/typescript.png" alt="">
+                        <img src="./assets/icons/reactjs.png" alt="" style="width:28px;">
+                    </div>
+                    <div class="post-button">
+                        <button class="edit">Edit</button>
+                        <button class="delete">Delete</button>
+                    </div>
+                </div>
+                <div class="card-post">
+                    <img class="post-img" src="./assets/images/3dweb.webp">
+                    <div class="title-date">
+                        <h1 class="title">3D Website</h1>
+                        <h3 class="date">Durasi : 1 bulan</h3>
+                    </div>
+                    <div class="post-content">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste autem sunt iusto aliquam</p>
+                    </div>
+                    <div class="tag-tech" id="tag-tech" >
+                        <img src="./assets/icons/nextjs.png" alt="">
+                        <img src="./assets/icons/nodejs.png" alt="">
+                        <img src="./assets/icons/typescript.png" alt="">
+                        <img src="./assets/icons/reactjs.png" alt="" style="width:28px;">
+                    </div>
+                    <div class="post-button">
+                        <button class="edit">Edit</button>
+                        <button class="delete">Delete</button>
+                    </div>
+                </div>
+                <div class="card-post">
+                    <img class="post-img" src="./assets/images/mobileappp.jpg">
+                    <div class="title-date">
+                        <h1 class="title">Build Mobile App</h1>
+                        <h3 class="date">Durasi : 1 bulan</h3>
+                    </div>
+                    <div class="post-content">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste autem sunt iusto aliquam</p>
+                    </div>
+                    <div class="tag-tech" id="tag-tech" >
+                        <img src="./assets/icons/nextjs.png" alt="">
+                        <img src="./assets/icons/nodejs.png" alt="">
+                        <img src="./assets/icons/typescript.png" alt="">
+                        <img src="./assets/icons/reactjs.png" alt="" style="width:28px;">
+                    </div>
+                    <div class="post-button">
+                        <button class="edit">Edit</button>
+                        <button class="delete">Delete</button>
+                    </div>
+                </div>
+                <div class="card-post">
+                    <img class="post-img" src="./assets/images/mobileapp.jpg">
+                    <div class="title-date">
+                        <h1 class="title">Build Mobile App</h1>
+                        <h3 class="date">Durasi : 2 bulan</h3>
+                    </div>
+                    <div class="post-content">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste autem sunt iusto aliquam</p>
+                    </div>
+                    <div class="tag-tech" id="tag-tech" >
+                        <img src="./assets/icons/nextjs.png" alt="">
+                        <img src="./assets/icons/nodejs.png" alt="">
+                        <img src="./assets/icons/typescript.png" alt="">
+                        <img src="./assets/icons/reactjs.png" alt="" style="width:28px;">
+                    </div>
+                    <div class="post-button">
+                        <button class="edit">Edit</button>
+                        <button class="delete">Delete</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="./assets/js/blog.js"></script>
+    </body>
+</html>

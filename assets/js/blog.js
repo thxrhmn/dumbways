@@ -49,7 +49,6 @@ const getData = (event) => {
         months,
         description,
         img,
-        date: new Date(),
         icons
     }
 
@@ -57,6 +56,7 @@ const getData = (event) => {
     console.log(datas)
     showData()
 }
+
 
 const showData = () => {
     document.getElementById("contents").innerHTML = ''
@@ -86,6 +86,7 @@ const showData = () => {
         `
     }
 }
+
 
 const blogTime = (month) => {
     return month

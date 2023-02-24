@@ -7,35 +7,39 @@ const getData = (event) => {
     let endDate = document.getElementById("enddate").value
     let description = document.getElementById("description").value
     let img = document.getElementById("blog-img").files
-
+    
     let nodejs = document.getElementById("nodejs").checked
     let nextjs = document.getElementById("nextjs").checked
     let reactjs = document.getElementById("reactjs").checked
     let typescript = document.getElementById("typescript").checked
-    
-    let newNodejs = nodejs == true ? `<img id="nodejs" src="./assets/icons/nodejs.png" alt="">` : "";
-    let newNextjs = nextjs == true ? `<img id="nextjs" src="./assets/icons/nextjs.png" alt="">` : "";
-    let newReactjs = reactjs == true ? `<img id="reactjs" src="./assets/icons/reactjs.png" alt="" style="width:28px;">` : "";
-    let newTypescript = typescript == true ? `<img id="typescript" src="./assets/icons/typescript.png" alt="">` : "";
 
+    // ICON TAG
+    let icons = []
+
+    icons.push(nodejs)
+    icons.push(nextjs)
+    icons.push(reactjs)
+    icons.push(typescript)
+
+    // IMG BLOB
     img = URL.createObjectURL(img[0])
-    
+
+    // KONDISI
     if (projectName == "") {
-        return alert("Project Name tidak Boleh Kosong")
+        return alert("Project Name Tidak Boleh Kosong")
     } else if (description == "") {
-        return alert("Description Name tidak Boleh Kosong")
-    }
+        return alert("Description Name Tidak Boleh Kosong")
+    } else if (startDate == "") {
+        return alert("Date Tidak Boleh Kosong")
+    } else if (endDate == "") {
+        return alert("Date Tidak Boleh Kosong")
+    }  
 
     let data = {
         projectName,
-        startDate,
-        endDate,
         description,
         img,
-        newNodejs,
-        newNextjs,
-        newReactjs,
-        newTypescript
+        icons
     }
 
     datas.push(data)
@@ -52,16 +56,16 @@ const showData = () => {
             <img class="post-img" src="${datas[i].img}">
             <div class="title-date">
                 <h1 class="title">${datas[i].projectName}</h1>
-                <h3 class="date">Durasi : 2 bulan</h3>
+                <h3 class="date">Durasi : 2 Bulan</h3>
             </div>
             <div class="post-content">
                 <p>${datas[i].description}</p>
             </div>
             <div class="tag-tech" id="tag-tech">
-                ${datas[i].newNodejs}
-                ${datas[i].newNextjs}
-                ${datas[i].newReactjs}
-                ${datas[i].newTypescript}
+                ${datas[i].icons[0] == true ? `<img id="nodejs" src="./assets/icons/nodejs.png" alt="">` : ""}
+                ${datas[i].icons[1] == true ? `<img id="nextjs" src="./assets/icons/nextjs.png" alt="">` : ""}
+                ${datas[i].icons[2] == true ? `<img id="reactjs" src="./assets/icons/reactjs.png" alt="" style="width:28px;">` : ""}
+                ${datas[i].icons[3] == true ? `<img id="typescript" src="./assets/icons/typescript.png" alt="">` : ""}
             </div>
             <div class="post-button">
                 <button class="edit">Edit</button>
@@ -71,3 +75,4 @@ const showData = () => {
         `
     }
 }
+

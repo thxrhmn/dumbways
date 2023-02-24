@@ -1,0 +1,403 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    background-color: #DCE0E4;
+}
+
+/* NAVBAR */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F4F3F3;
+}
+
+nav .nav-left {
+    margin-left: 130px;
+
+}
+
+nav .nav-left ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    padding: 0;
+}
+
+nav .nav-left ul li {
+    margin-right: 20px;
+}
+
+nav .nav-left ul li img {
+    width: 30px;
+    background-color: red;
+    padding: 5px;
+}
+
+nav .nav-left ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+nav .nav-right {
+    background-color: black;
+    padding: 10px;
+    border-radius: 10px;
+    margin-right: 130px;
+}
+
+nav .nav-right a {
+    color: white;
+    text-decoration: none;
+}
+
+nav .nav-left ul li a.active {
+    font-weight: bold;
+}
+/* END NAVBAR */
+
+/* CARD & CONTENT*/
+.card {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 90px 130px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 9px -5px #333;
+}
+
+.card-content {
+    width: 710px;
+    margin: auto 0;
+}
+
+.card-content h1 {
+    margin: 20px 50px;
+
+}
+
+.card-content p {
+    margin: 0 50px;
+    text-align: justify;
+}
+
+.card-profile {
+    width: 300px;
+    margin: 50px auto;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 20px 30px #dbdbdb; 
+}
+
+.card-profile-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-profile-content h2 {
+    margin: 13px 0 0;
+}
+
+.card-profile-content p {
+    margin: 5px 0 13px;
+}
+
+.downloads {
+    display: flex;
+    flex-direction: row;
+    margin: 30px 50px;
+    align-items: center;
+}
+
+.downloads button {
+    padding: 8px 20px; 
+    border-radius: 20px; 
+    border:0; 
+    background-color: black; 
+    color: white;
+    margin-right: 15px;
+}
+
+a.contact {
+    text-decoration: none; 
+    color:white;
+}
+
+.social-media {
+    margin: 20px 50px; 
+    width: 300px; 
+    display: flex;
+    justify-content: left;
+}
+
+.fa-brands {
+    color: white; 
+    background-color: black; 
+    width: 13px; 
+    height: 13px; 
+    line-height: 13px; 
+    border-radius: 50%; 
+    text-align: center; 
+    padding: 12px; 
+    margin: 5px;
+}
+/* END CARD & CONTENT */
+
+
+/* BLOG.HTML */
+.container {
+    width: 390px;
+    margin:0 auto 150px;
+}
+
+.container h1 {
+    text-align: center;
+    margin-top: 90px;
+}
+
+form *{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+form .form-item {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+}
+
+form .form-item label {
+    margin-bottom: 5px;
+}
+
+form .form-item input {
+    font-size: 20px;
+    border: 0px;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 5px 4px -5px #333;
+}
+
+form .form-item input[type=file] {
+    background-color: white;
+}
+
+form .upload-image {
+    background-color: white;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 0 5px 4px -5px #333;
+    height: 45px;
+    border: 1px solid #DEDDDD;
+    margin-bottom: 49px;
+
+}
+
+div:nth-child(5) {
+    margin-bottom: 0px !important; 
+}
+
+#blog-img {
+    position: absolute;
+    z-index: 2;
+    position: absolute;
+    z-index: 2;
+    opacity: 0;
+    margin-top: -42px;
+    height: 40px;
+    cursor: pointer;
+}
+
+form .upload-image label {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    align-items: center;
+    cursor: pointer;
+}   
+
+form .upload-image label span {
+    background-color: #eaebec;
+    padding: 11px;
+    color: #b2abab;
+    border-radius: 0 8px 8px 0;
+    font-size: 20px;
+}
+
+form .upload-image label img {
+    width: 29px;
+    margin: 0 8px;
+}
+
+form .form-item-date {
+    display: flex;
+    justify-content: space-between;
+}
+
+form .form-item-date .date-item {
+    display: flex;
+    flex-direction: column;
+    width: 47%;
+}
+
+form .form-item-date .date-item label {
+    margin-bottom: 5px;
+}
+
+form .form-item-date .date-item input {
+    font-size: 20px;
+    border: 0px;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 5px 4px -5px #333;
+}
+
+form .form-item .description {
+    font-family: Arial, Helvetica, sans-serif;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    resize: none;
+    font-size: 20px;
+    height: 80px;
+    box-shadow: 0 5px 4px -5px #333;
+}
+
+form .form-item .tech {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+form .form-item .tech .tech-item {
+    margin: 5px;
+    width: 45%;
+}
+
+form .form-item .tech .tech-item label {
+    color: #333333
+}
+
+form .submit {
+    float: right;
+    width: 107px;
+}
+
+form .submit button {
+    font-size: 20px;
+    width: 100%;
+    padding: 7px 20px;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+}
+/* END BLOG FORM */
+
+
+/* CONTAINER2 */
+.container2 {
+    background-color: white;
+    padding-top: 45px;
+}
+
+.container2 h1.head {
+    text-align: center;
+}
+
+.container2 .container-blog {
+    display: flex;
+    flex-wrap: wrap;
+    width: 900px; 
+    margin: 30px auto;
+    padding-bottom: 300px;
+}
+
+.card-post {
+    width: 28%;
+    height: 360px;
+    margin: 10px;
+    padding: 10px 10px 20px 10px;
+    background-color: white; 
+    border-radius: 8px;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.11), 
+    0 2px 2px rgba(0,0,0,0.11), 
+    0 4px 4px rgba(0,0,0,0.11), 
+    0 6px 8px rgba(0,0,0,0.11),
+    0 8px 16px rgba(0,0,0,0.11);
+}
+
+.card-post .title-date {
+    margin: 15px 0;
+}
+
+.card-post .title-date .title, .card-post .title-date .date  {
+    margin: 0;
+}
+
+.card-post .title-date .title {
+    font-size: 20px;
+    font-weight: normal;
+    text-transform: capitalize;
+}
+
+.card-post .title-date .date {
+    font-weight: normal;
+    font-size: 15px;
+    color: rgb(216, 207, 207);
+}
+
+.card-post .post-img {
+    width: 100%;
+    height: 160px;
+    border-radius: 8px;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.card-post .post-content p {
+    margin: 2px 0;
+    -webkit-line-clamp:3;
+    -webkit-box-orient:vertical;
+    overflow:hidden !important;
+    display: -webkit-box;
+}
+
+.card-post .tag-tech {
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.card-post .tag-tech img {
+    width: 25px;
+    margin-right: 11px;
+}
+
+.card-post .tag-tech a {
+    background-color: grey;
+    text-decoration: none; 
+    color: black; 
+    padding: 5px 0;
+}
+
+.card-post .post-button {
+    padding: 5px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-post button {
+    width: 49%;
+    padding: 5px;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    background-color: #111727;
+
+}
+/* END CONTAINER2 */

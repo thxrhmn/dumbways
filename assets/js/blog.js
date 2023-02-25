@@ -39,6 +39,8 @@ const getData = (event) => {
         return alert("Project Cannot be empty")
     } else if (description == "") {
         return alert("Description Cannot be empty")
+    } else if (description.length < 80) {
+        return alert("Description must be more than 80 Characters")
     } else if (startDate == "") {
         return alert("Date Cannot be empty")
     } else if (endDate == "") {

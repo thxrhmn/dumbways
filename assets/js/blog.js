@@ -62,10 +62,10 @@ const showData = () => {
                 <p>${datas[i].description}</p>
             </div>
             <div class="tag-tech" id="tag-tech">
-                ${datas[i].icons[0] == true ? `<img id="nodejs" src="./assets/icons/nodejs.png" alt="">` : ""}
-                ${datas[i].icons[1] == true ? `<img id="nextjs" src="./assets/icons/nextjs.png" alt="">` : ""}
-                ${datas[i].icons[2] == true ? `<img id="reactjs" src="./assets/icons/reactjs.png" alt="" style="width:28px;">` : ""}
-                ${datas[i].icons[3] == true ? `<img id="typescript" src="./assets/icons/typescript.png" alt="">` : ""}
+                ${datas[i].icons[0] == true ? `<img class="nodejs">` : ""}
+                ${datas[i].icons[1] == true ? `<img class="nextjs">` : ""}
+                ${datas[i].icons[2] == true ? `<img class="reactjs">` : ""}
+                ${datas[i].icons[3] == true ? `<img class="typescript">` : ""}
             </div>
             <div class="post-button">
                 <button class="edit">Edit</button>

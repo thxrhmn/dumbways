@@ -1,0 +1,21 @@
+.card-post .tag-tech img {
+    width: 25px;
+    margin-right: 11px;
+}
+
+.card-post .tag-tech img.nodejs {
+    content: url("../icons/nodejs.png");
+}
+
+.card-post .tag-tech img.nextjs {
+    content: url("../icons/nextjs.png");
+}
+
+.card-post .tag-tech img.reactjs {
+    content: url("../icons/reactjs.png");
+    width: 28px;
+}
+
+.card-post .tag-tech img.typescript {
+    content: url("../icons/typescript.png");
+}

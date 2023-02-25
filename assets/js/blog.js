@@ -31,17 +31,18 @@ const getData = (event) => {
     let newStartDate = new Date(startDate);
     let newEndDate = new Date(endDate);
     let duration = newEndDate.getTime() - newStartDate.getTime()
-    let months = Math.floor(duration / (1000 * 60 * 60 * 24 * 30)) // milidetik * detik * menit * jam * hari
+    // milidetik * detik * menit * jam * hari
+    let months = Math.floor(duration / (1000 * 60 * 60 * 24 * 30))
 
     // KONDISI
     if (projectName == "") {
-        return alert("Project Name Tidak Boleh Kosong")
+        return alert("Project Cannot be empty")
     } else if (description == "") {
-        return alert("Description Name Tidak Boleh Kosong")
+        return alert("Description Cannot be empty")
     } else if (startDate == "") {
-        return alert("Date Tidak Boleh Kosong")
+        return alert("Date Cannot be empty")
     } else if (endDate == "") {
-        return alert("Date Tidak Boleh Kosong")
+        return alert("Date Cannot be empty")
     }  
 
     let data = {
@@ -73,10 +74,10 @@ const showData = () => {
                 <p>${datas[i].description}</p>
             </div>
             <div class="tag-tech" id="tag-tech">
-                ${datas[i].icons[0] == true ? `<img id="nodejs" src="./assets/icons/nodejs.png" alt="">` : ""}
-                ${datas[i].icons[1] == true ? `<img id="nextjs" src="./assets/icons/nextjs.png" alt="">` : ""}
-                ${datas[i].icons[2] == true ? `<img id="reactjs" src="./assets/icons/reactjs.png" alt="" style="width:28px;">` : ""}
-                ${datas[i].icons[3] == true ? `<img id="typescript" src="./assets/icons/typescript.png" alt="">` : ""}
+                ${datas[i].icons[0] == true ? `<img class="nodejs">` : ""}
+                ${datas[i].icons[1] == true ? `<img class="nextjs">` : ""}
+                ${datas[i].icons[2] == true ? `<img class="reactjs">` : ""}
+                ${datas[i].icons[3] == true ? `<img class="typescript">` : ""}
             </div>
             <div class="post-button">
                 <button class="edit">Edit</button>

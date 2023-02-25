@@ -1,7 +1,7 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0px;
-    background-color: #DCE0E4;
+    background-color: #dce0e4;
 }
 
 .container {
@@ -37,7 +37,8 @@ body {
     margin-bottom: 20px;
 }
 
-.detail .detail-item h3, .detail .detail-item h5 {
+.detail .detail-item h3,
+.detail .detail-item h5 {
     margin: 0;
     margin-bottom: 5px;
 }

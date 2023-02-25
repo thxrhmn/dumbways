@@ -1,7 +1,7 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0px;
-    background-color: #DCE0E4;
+    background-color: #dce0e4;
 }
 
 /* CARD & CONTENT*/
@@ -23,7 +23,6 @@ body {
 
 .card-content h1 {
     margin: 20px 50px;
-
 }
 
 .card-content p {
@@ -36,7 +35,7 @@ body {
     margin: 50px auto;
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 20px 30px #dbdbdb; 
+    box-shadow: 0 20px 30px #dbdbdb;
 }
 
 .card-profile-content {
@@ -61,35 +60,35 @@ body {
 }
 
 .downloads button {
-    padding: 8px 20px; 
-    border-radius: 20px; 
-    border:0; 
-    background-color: black; 
+    padding: 8px 20px;
+    border-radius: 20px;
+    border: 0;
+    background-color: black;
     color: white;
     margin-right: 15px;
 }
 
 a.contact {
-    text-decoration: none; 
-    color:white;
+    text-decoration: none;
+    color: white;
 }
 
 .social-media {
-    margin: 20px 50px; 
-    width: 300px; 
+    margin: 20px 50px;
+    width: 300px;
     display: flex;
     justify-content: left;
 }
 
 .fa-brands {
-    color: white; 
-    background-color: black; 
-    width: 13px; 
-    height: 13px; 
-    line-height: 13px; 
-    border-radius: 50%; 
-    text-align: center; 
-    padding: 12px; 
+    color: white;
+    background-color: black;
+    width: 13px;
+    height: 13px;
+    line-height: 13px;
+    border-radius: 50%;
+    text-align: center;
+    padding: 12px;
     margin: 5px;
 }
 /* END CARD & CONTENT */

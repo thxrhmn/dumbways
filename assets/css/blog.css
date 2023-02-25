@@ -1,7 +1,7 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0px;
-    background-color: #DCE0E4;
+    background-color: #dce0e4;
 }
 
 /* CARD & CONTENT*/
@@ -23,7 +23,6 @@ body {
 
 .card-content h1 {
     margin: 20px 50px;
-
 }
 
 .card-content p {
@@ -36,7 +35,7 @@ body {
     margin: 50px auto;
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 20px 30px #dbdbdb; 
+    box-shadow: 0 20px 30px #dbdbdb;
 }
 
 .card-profile-content {
@@ -61,44 +60,43 @@ body {
 }
 
 .downloads button {
-    padding: 8px 20px; 
-    border-radius: 20px; 
-    border:0; 
-    background-color: black; 
+    padding: 8px 20px;
+    border-radius: 20px;
+    border: 0;
+    background-color: black;
     color: white;
     margin-right: 15px;
 }
 
 a.contact {
-    text-decoration: none; 
-    color:white;
+    text-decoration: none;
+    color: white;
 }
 
 .social-media {
-    margin: 20px 50px; 
-    width: 300px; 
+    margin: 20px 50px;
+    width: 300px;
     display: flex;
     justify-content: left;
 }
 
 .fa-brands {
-    color: white; 
-    background-color: black; 
-    width: 13px; 
-    height: 13px; 
-    line-height: 13px; 
-    border-radius: 50%; 
-    text-align: center; 
-    padding: 12px; 
+    color: white;
+    background-color: black;
+    width: 13px;
+    height: 13px;
+    line-height: 13px;
+    border-radius: 50%;
+    text-align: center;
+    padding: 12px;
     margin: 5px;
 }
 /* END CARD & CONTENT */
 
-
 /* BLOG.HTML */
 .container {
     width: 390px;
-    margin:0 auto 150px;
+    margin: 0 auto 150px;
 }
 
 .container h1 {
@@ -106,7 +104,7 @@ a.contact {
     margin-top: 90px;
 }
 
-form *{
+form * {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
 }
@@ -129,7 +127,7 @@ form .form-item input {
     box-shadow: 0 5px 4px -5px #333;
 }
 
-form .form-item input[type=file] {
+form .form-item input[type="file"] {
     background-color: white;
 }
 
@@ -140,13 +138,12 @@ form .upload-image {
     border-radius: 5px;
     box-shadow: 0 5px 4px -5px #333;
     height: 45px;
-    border: 1px solid #DEDDDD;
+    border: 1px solid #dedddd;
     margin-bottom: 49px;
-
 }
 
 div:nth-child(5) {
-    margin-bottom: 0px !important; 
+    margin-bottom: 0px !important;
 }
 
 #blog-img {
@@ -166,7 +163,7 @@ form .upload-image label {
     height: 100%;
     align-items: center;
     cursor: pointer;
-}   
+}
 
 form .upload-image label span {
     background-color: #eaebec;
@@ -226,7 +223,7 @@ form .form-item .tech .tech-item {
 }
 
 form .form-item .tech .tech-item label {
-    color: #333333
+    color: #333333;
 }
 
 form .submit {
@@ -244,7 +241,6 @@ form .submit button {
 }
 /* END BLOG FORM */
 
-
 /* CONTAINER2 */
 .container2 {
     background-color: white;
@@ -258,7 +254,7 @@ form .submit button {
 .container2 .container-blog {
     display: flex;
     flex-wrap: wrap;
-    width: 900px; 
+    width: 900px;
     margin: 30px auto;
     padding-bottom: 300px;
 }
@@ -268,20 +264,19 @@ form .submit button {
     height: 360px;
     margin: 10px;
     padding: 10px 10px 20px 10px;
-    background-color: white; 
+    background-color: white;
     border-radius: 8px;
-    box-shadow: 0 1px 1px rgba(0,0,0,0.11), 
-    0 2px 2px rgba(0,0,0,0.11), 
-    0 4px 4px rgba(0,0,0,0.11), 
-    0 6px 8px rgba(0,0,0,0.11),
-    0 8px 16px rgba(0,0,0,0.11);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.11), 0 2px 2px rgba(0, 0, 0, 0.11),
+        0 4px 4px rgba(0, 0, 0, 0.11), 0 6px 8px rgba(0, 0, 0, 0.11),
+        0 8px 16px rgba(0, 0, 0, 0.11);
 }
 
 .card-post .title-date {
     margin: 15px 0;
 }
 
-.card-post .title-date .title, .card-post .title-date .date  {
+.card-post .title-date .title,
+.card-post .title-date .date {
     margin: 0;
 }
 
@@ -307,9 +302,9 @@ form .submit button {
 
 .card-post .post-content p {
     margin: 2px 0;
-    -webkit-line-clamp:3;
-    -webkit-box-orient:vertical;
-    overflow:hidden !important;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden !important;
     display: -webkit-box;
 }
 
@@ -321,8 +316,8 @@ form .submit button {
 
 .card-post .tag-tech a {
     background-color: grey;
-    text-decoration: none; 
-    color: black; 
+    text-decoration: none;
+    color: black;
     padding: 5px 0;
 }
 
@@ -340,6 +335,5 @@ form .submit button {
     color: white;
     font-weight: bold;
     background-color: #111727;
-
 }
 /* END CONTAINER2 */

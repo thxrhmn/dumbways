@@ -7,7 +7,6 @@ const getData = () => {
 
     if (name == "") {
         alert("Name Cannot be empty");
-        
         return;
     } else if (email == "") {
         alert("Email Cannot be empty");

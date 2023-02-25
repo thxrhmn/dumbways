@@ -26,13 +26,13 @@ const getData = (event) => {
 
     // KONDISI
     if (projectName == "") {
-        return alert("Project Name Tidak Boleh Kosong")
+        return alert("Project Cannot be empty")
     } else if (description == "") {
-        return alert("Description Name Tidak Boleh Kosong")
+        return alert("Description Cannot be empty")
     } else if (startDate == "") {
-        return alert("Date Tidak Boleh Kosong")
+        return alert("Date Cannot be empty")
     } else if (endDate == "") {
-        return alert("Date Tidak Boleh Kosong")
+        return alert("Date Cannot be empty")
     }  
 
     let data = {

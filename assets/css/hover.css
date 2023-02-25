@@ -1,0 +1,23 @@
+/* home */
+.downloads button:hover,
+.fa-brands:hover,
+.nav-right:hover {
+    background-color: #191825;
+}
+
+li a:hover,
+li a.active,
+.download a:hover,
+.download a span:hover {
+    color: #191825 !important;
+}
+
+/* blog, contact-form,  */
+.submit button:hover {
+    background-color: #191825;
+    cursor: pointer;
+}
+
+.input-item .upload-image:hover {
+    cursor: pointer;
+}

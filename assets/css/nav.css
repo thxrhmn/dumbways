@@ -2,12 +2,11 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #F4F3F3;
+    background-color: #f4f3f3;
 }
 
 nav .nav-left {
     margin-left: 130px;
-
 }
 
 nav .nav-left ul {

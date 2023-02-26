@@ -90,7 +90,11 @@ const showData = () => {
 };
 
 const blogDuration = (days) => {
-    if (days < 30) {
+    if (days == 1) {
+        return days + " Day";
+    } else if (days < 7) {
+        return Math.floor(days / 1) + " Days";
+    } else if (days < 30) {
         return Math.floor(days / 7) + " Weeks";
     } else if (days >= 30 && days < 365) {
         return Math.floor(days / 30) + " Months";

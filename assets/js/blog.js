@@ -16,12 +16,20 @@ const getData = (event) => {
 
     let icons = [nodejs, nextjs, reactjs, typescript];
 
-    img = URL.createObjectURL(img[0]);
-
     let newStartDate = new Date(startDate);
     let newEndDate = new Date(endDate);
     let duration = newEndDate.getTime() - newStartDate.getTime();
     let months = Math.floor(duration / (1000 * 60 * 60 * 24 * 30));
+
+    try {
+        img = URL.createObjectURL(img[0]);
+    } catch (error) {
+        if (error instanceof TypeError) {
+            alert("Image Cannot be empty");
+        } else {
+            throw error;
+        }
+    }
 
     if (projectName == "") {
         return alert("Project Cannot be empty");

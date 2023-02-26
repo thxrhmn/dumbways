@@ -16,10 +16,11 @@ const getData = (event) => {
 
     let icons = [nodejs, nextjs, reactjs, typescript];
 
-    let newStartDate = new Date(startDate);
-    let newEndDate = new Date(endDate);
-    let duration = newEndDate.getTime() - newStartDate.getTime();
-    let months = Math.floor(duration / (1000 * 60 * 60 * 24 * 30));
+    startDate = new Date(startDate);
+    endDate = new Date(endDate);
+    let duration = endDate.getTime() - startDate.getTime();
+    let days = Math.floor(duration / (1000 * 60 * 60 * 24));
+    days += 1
 
     try {
         img = URL.createObjectURL(img[0]);
@@ -45,7 +46,7 @@ const getData = (event) => {
 
     let data = {
         projectName,
-        months,
+        days,
         description,
         img,
         icons,
@@ -66,9 +67,7 @@ const showData = () => {
                 <img class="post-img" src="${datas[i].img}">
                 <div class="title-date">
                     <h1 class="title">${datas[i].projectName}</h1>
-                    <h3 class="date">Durasi : ${blogTime(
-                        datas[i].months
-                    )} Bulan</h3>
+                    <h3 class="date">Duration : ${blogDuration(datas[i].days)}</h3>
                 </div>
                 <div class="post-content">
                     <p>${datas[i].description}</p>
@@ -88,6 +87,12 @@ const showData = () => {
     }
 };
 
-const blogTime = (month) => {
-    return month;
+const blogDuration = (days) => {
+    if (days < 30) {
+        return Math.floor(days / 7) + " Weeks";
+    } else if (days >= 30 && days < 365) {
+        return Math.floor(days / 30) + " Months";
+    } else if (days >= 365) {
+        return Math.floor(days / 365) + " Years";
+    }
 };

@@ -286,6 +286,11 @@ form .submit button {
     text-transform: capitalize;
 }
 
+.card-post .title-date .title a {
+    text-decoration: none;
+	color: black;
+}
+
 .card-post .title-date .date {
     font-weight: normal;
     font-size: 15px;

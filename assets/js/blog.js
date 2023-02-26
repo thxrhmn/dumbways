@@ -66,7 +66,9 @@ const showData = () => {
             <div class="card-post">
                 <img class="post-img" src="${datas[i].img}">
                 <div class="title-date">
-                    <h1 class="title">${datas[i].projectName}</h1>
+                    <h1 class="title">
+                        <a href="#">${datas[i].projectName}</a>
+                    </h1>
                     <h3 class="date">Duration : ${blogDuration(datas[i].days)}</h3>
                 </div>
                 <div class="post-content">

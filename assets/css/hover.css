@@ -21,3 +21,7 @@ li a.active,
 .input-item .upload-image:hover {
     cursor: pointer;
 }
+
+.card-post .title-date .title a:hover {
+    color: #111727
+}

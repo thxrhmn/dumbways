@@ -19,7 +19,7 @@ const getData = (event) => {
     startDate = new Date(startDate);
     endDate = new Date(endDate);
     let duration = endDate.getTime() - startDate.getTime(); // 1327868876
-    let days = Math.floor(duration / (1000 * 60 * 60 * 24)); // startdate 01-01-2023 enddate 05-01-2023 = 4
+    let days = Math.floor(duration / (1000 * 60 * 60 * 24)); // e.g startdate 01-01-2023 enddate 05-01-2023 = 4
     days += 1 // 5
     
     try {

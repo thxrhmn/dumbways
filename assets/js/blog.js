@@ -18,18 +18,14 @@ const getData = (event) => {
 
     startDate = new Date(startDate);
     endDate = new Date(endDate);
-    let duration = endDate.getTime() - startDate.getTime();
-    let days = Math.floor(duration / (1000 * 60 * 60 * 24));
-    days += 1
-
+    let duration = endDate.getTime() - startDate.getTime(); // 1327868876
+    let days = Math.floor(duration / (1000 * 60 * 60 * 24)); // startdate 01-01-2023 enddate 05-01-2023 = 4
+    days += 1 // 5
+    
     try {
         img = URL.createObjectURL(img[0]);
     } catch (error) {
-        if (error instanceof TypeError) {
-            alert("Image Cannot be empty");
-        } else {
-            throw error;
-        }
+        return alert("Image Cannot be empty");
     }
 
     if (projectName == "") {
@@ -93,7 +89,7 @@ const blogDuration = (days) => {
     if (days == 1) {
         return days + " Day";
     } else if (days < 7) {
-        return Math.floor(days / 1) + " Days";
+        return days / 1 + " Days";
     } else if (days < 30) {
         return Math.floor(days / 7) + " Weeks";
     } else if (days >= 30 && days < 365) {

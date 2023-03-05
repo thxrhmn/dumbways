@@ -4,6 +4,10 @@ body {
     background-color: #dce0e4;
 }
 
+nav .navbar-mobile {
+    display: none;
+}
+
 /* CARD & CONTENT*/
 .card {
     background-color: white;

@@ -1,9 +1,14 @@
 <html>
     <head>
-        <title>Day 5 - Count Post Blog Time</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Day 6 - Responsive CSS</title>
         <link rel="stylesheet" href="./assets/css/style.css" />
         <link rel="stylesheet" href="./assets/css/nav.css" />
         <link rel="stylesheet" href="./assets/css/hover.css"/>
+        <link rel="stylesheet" href="./assets/css/media-query.css"/>
+        <link rel="stylesheet" href="./assets/css/list-menu-mobile.css"/>
         <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
@@ -17,11 +22,13 @@
             <div class="nav-left">
                 <ul>
                     <li>
-                        <img
-                            class="brand"
-                            src="./assets/images/brand.png"
-                            alt=""
-                        />
+                        <a href="/">
+                            <img
+                                class="brand"
+                                src="./assets/images/brand.png"
+                                alt=""
+                            />
+                        </a>
                     </li>
                     <li><a href="" class="active">Home</a></li>
                     <li><a href="blog.html">Project</a></li>
@@ -30,7 +37,29 @@
             <div class="nav-right">
                 <a href="contact-form.html">Contact me</a>
             </div>
+            <div class="navbar-mobile" style="display: none;">
+                <div class="logo">
+                    <a href="/">
+                        <img
+                            class="brand"
+                            src="./assets/images/brand.png"
+                            alt=""
+                        />
+                    </a>
+                </div>
+                <div class="btn-menu">
+                    <button onclick="showMenu()" id="show-button"><i class="fa-2x fa-solid fa-bars"></i></button>
+                </div>
+            </div>
         </nav>
+        <div class="list-menu-mobile" id="list-menu-mobile" style="display: none;">
+            <ul>
+                <li class="list-active"><a href="">Home</a></li>
+                <li><a href="blog.html">My Project</a></li>
+                <li class="contact-me-btn"><a href="contact-form.html">Contact Me</a></li>
+            </ul>
+        </div>
+        
         <div class="card">
             <div class="card-content">
                 <h1>Hi Welcome to my hut</h1>
@@ -81,5 +110,6 @@
                 </div>
             </div>
         </div>
+        <script src="./assets/js/menu.js"></script>
     </body>
 </html>

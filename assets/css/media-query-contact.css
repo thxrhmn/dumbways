@@ -1,0 +1,66 @@
+/* MOBILE */
+@media only screen and (max-width: 500px) {
+    nav .nav-left, nav .nav-right {
+        display: none;
+    }
+
+    nav .navbar-mobile {
+        display: block !important;
+        width: 100% !important;
+        height: 62px !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: space-between !important;
+    }
+
+    nav .navbar-mobile .logo, nav .navbar-mobile .btn-menu button {
+        margin: 0 10px;
+    }
+
+    nav .navbar-mobile .logo img {
+        height: 27px;
+        background-color: red;
+        padding: 5px;
+    }
+
+    nav .navbar-mobile .btn-menu button {
+        border: none;
+        border-radius: 5px;
+        padding: 5px 8px;
+    }
+
+    form {
+        width: 90%;
+        margin: auto;
+    }
+
+    form div select {
+        background-color: white;
+    }
+
+}
+
+/* TABLET */
+@media only screen and (min-width: 501px) and (max-width: 768px) {
+    nav .nav-left {
+        margin-left: 10px;
+    }
+
+    nav .nav-right {
+        background-color: black;
+        padding: 10px;
+        border-radius: 10px;
+        margin-right: 10px;
+    }
+
+}
+
+/* DESKTOP */
+@media only screen and (min-width:769px) and (max-width: 1000px) {
+   
+}
+
+/* DESKTOP UP TO LARGE */
+@media only screen and (min-width: 1001px) and (max-width: 1200px) {
+    
+}

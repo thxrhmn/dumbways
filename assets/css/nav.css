@@ -1,4 +1,5 @@
 nav {
+    height: 65px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -24,12 +25,13 @@ nav .nav-left ul li img {
     width: 30px;
     background-color: red;
     padding: 5px;
+    cursor: pointer;
 }
 
 nav .nav-left ul li a {
     text-decoration: none;
     color: black;
-    font-size: 20px;
+    font-size: 16px;
 }
 
 nav .nav-right {
@@ -42,6 +44,7 @@ nav .nav-right {
 nav .nav-right a {
     color: white;
     text-decoration: none;
+    font-size: 16px;
 }
 
 nav .nav-left ul li a.active {

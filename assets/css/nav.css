@@ -3,7 +3,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #f4f3f3;
+    background-color: white;
 }
 
 nav .nav-left {

@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    background-color: #dce0e4;
+}
+
+nav .navbar-mobile {
+    display: none;
+}
+
+/* CARD & CONTENT*/
+.card {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 90px 130px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 9px -5px #333;
+}
+
+.card-content {
+    width: 710px;
+    margin: auto 0;
+}
+
+.card-content h1 {
+    margin: 20px 50px;
+}
+
+.card-content p {
+    margin: 0 50px;
+    text-align: justify;
+}
+
+.card-profile {
+    width: 300px;
+    margin: 50px auto;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 20px 30px #dbdbdb;
+}
+
+.card-profile-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-profile-content h2 {
+    margin: 13px 0 0;
+}
+
+.card-profile-content p {
+    margin: 5px 0 13px;
+}
+
+.downloads {
+    display: flex;
+    flex-direction: row;
+    margin: 30px 50px;
+    align-items: center;
+}
+
+.downloads button {
+    padding: 8px 20px;
+    border-radius: 20px;
+    border: 0;
+    background-color: black;
+    color: white;
+    margin-right: 15px;
+}
+
+a.contact {
+    text-decoration: none;
+    color: white;
+}
+
+.social-media {
+    margin: 20px 50px;
+    width: 300px;
+    display: flex;
+    justify-content: left;
+}
+
+.fa-brands {
+    color: white;
+    background-color: black;
+    width: 13px;
+    height: 13px;
+    line-height: 13px;
+    border-radius: 50%;
+    text-align: center;
+    padding: 12px;
+    margin: 5px;
+}
+/* END CARD & CONTENT */

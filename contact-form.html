@@ -1,0 +1,108 @@
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Day 7 - OOP Concept</title>
+        <link rel="stylesheet" href="./assets/css/style.css" />
+        <link rel="stylesheet" href="./assets/css/nav.css" />
+        <link rel="stylesheet" href="./assets/css/contact-form.css" />
+        <link rel="stylesheet" href="./assets/css/hover.css" />
+        <link rel="stylesheet" href="./assets/css/media-query-contact.css" />
+        <link rel="stylesheet" href="./assets/css/list-menu-mobile.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+            integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+    </head>
+    <body>
+        <nav>
+            <div class="nav-left">
+                <ul>
+                    <li>
+                        <a href="/">
+                            <img
+                                class="brand"
+                                src="./assets/images/brand.png"
+                                alt=""
+                            />
+                        </a>
+                    </li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="blog.html">Project</a></li>
+                </ul>
+            </div>
+            <div class="nav-right">
+                <a href="contact-form.html">Contact me</a>
+            </div>
+            <div class="navbar-mobile" style="display: none">
+                <div class="logo">
+                    <a href="/">
+                        <img
+                            class="brand"
+                            src="./assets/images/brand.png"
+                            alt=""
+                        />
+                    </a>
+                </div>
+                <div class="btn-menu">
+                    <button onclick="showMenu()" id="show-button">
+                        <i class="fa-2x fa-solid fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </nav>
+        <div
+            class="list-menu-mobile"
+            id="list-menu-mobile"
+            style="display: none"
+        >
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="blog.html">My Project</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>
+                <li class="contact-me-btn list-active">
+                    <a href="contact-form.html">Contact Me</a>
+                </li>
+            </ul>
+        </div>
+        <div class="container">
+            <h1>GET IN TOUCH</h1>
+            <form>
+                <div>
+                    <label for="name">Name</label>
+                    <input id="name" type="text" />
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input id="email" type="email" />
+                </div>
+                <div>
+                    <label for="phone">Phone Number</label>
+                    <input id="phone" type="number" />
+                </div>
+                <div>
+                    <label for="subject">Subject</label>
+                    <select id="subject" name="subject">
+                        <option selected></option>
+                        <option>Collaboration</option>
+                        <option>Discussion</option>
+                        <option>Hiring</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="message">Your Message</label>
+                    <textarea id="message"></textarea>
+                </div>
+                <div class="submit">
+                    <button type="button" onclick="getData()">Submit</button>
+                </div>
+            </form>
+        </div>
+        <script src="./assets/js/contact-form.js"></script>
+        <script src="./assets/js/menu.js"></script>
+    </body>
+</html>

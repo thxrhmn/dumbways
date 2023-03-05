@@ -1,0 +1,294 @@
+/* MOBILE */
+@media only screen and (max-width: 500px) {
+    .container-testimonials {
+        width: 100%;
+        margin-bottom: 500px;
+    }
+
+    .container-testimonials .rating-filter {
+        margin: 0px auto 37px auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    .container-testimonials .rating-filter button {
+        color: white;
+        padding: 9px;
+        cursor: pointer;
+        background-color: #111727;
+        margin: 5px;
+        border: none;
+    }
+
+
+    .container-testimonials h1 {
+        text-align: center;
+        margin: 50px;
+    }
+
+    .testi-card {
+        background-color: white;
+        border-radius: 9px;
+        overflow: hidden;
+        width: 80%;
+        margin: 0 auto 43px auto;
+        box-shadow: 0 1px 1px rgb(0 0 0 / 11%), 0 2px 2px rgb(0 0 0 / 11%),
+            0 4px 4px rgb(0 0 0 / 11%), 0 6px 8px rgb(0 0 0 / 11%),
+            0 8px 16px rgb(0 0 0 / 11%);
+    }
+
+    .testi-card .image {
+        margin: 12px;
+    }
+
+    .testi-card .image img {
+        width: 100%;
+        height: 282px;
+        border-radius: 8px;
+        object-fit: cover;
+    }
+
+    .testi-card .content p {
+        margin: 0;
+        padding: 13px;
+        text-align: justify;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+        float: right;
+    }
+
+    .footer h4 {
+        margin: 0;
+        padding: 0 13px 13px 0;
+        float: right;
+    }
+}
+
+/* TABLET */
+@media only screen and (min-width: 501px) and (max-width: 768px) {
+    .container-testimonials {
+        width: 100%;
+        margin-bottom: 500px;
+    }
+
+    .container-testimonials .rating-filter {
+        margin: 0px auto 37px auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    .container-testimonials .rating-filter button {
+        color: white;
+        padding: 9px;
+        cursor: pointer;
+        background-color: #111727;
+        margin: 5px;
+        border: none;
+    }
+
+    .container-testimonials h1 {
+        text-align: center;
+        margin: 50px;
+    }
+
+    .container-testimonials .testimonials {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+
+    .testi-card {
+        background-color: white;
+        border-radius: 9px;
+        overflow: hidden;
+        width: 47%;
+        margin: 0 auto 43px auto;
+        box-shadow: 0 1px 1px rgb(0 0 0 / 11%), 0 2px 2px rgb(0 0 0 / 11%),
+                0 4px 4px rgb(0 0 0 / 11%), 0 6px 8px rgb(0 0 0 / 11%),
+                0 8px 16px rgb(0 0 0 / 11%);
+    }
+
+    .testi-card .image {
+        margin: 12px;
+    }
+
+    .testi-card .image img {
+        width: 100%;
+        height: 282px;
+        border-radius: 8px;
+        object-fit: cover;
+    }
+
+    .testi-card .content p {
+        margin: 0;
+        padding: 13px;
+        text-align: justify;
+    }
+
+    .footer {
+        background-color: azure;
+    }
+
+    .footer h4 {
+        margin: 0;
+        padding: 0 13px 13px 0;
+        float: right;
+        font-weight: normal;
+    }
+}
+
+/* DESKTOP */
+@media only screen and (min-width: 769px) and (max-width: 1000px) {
+    .container-testimonials {
+        width: 100%;
+        margin-bottom: 500px;
+    }
+
+    .container-testimonials .rating-filter {
+        margin: 0px auto 37px auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    .container-testimonials .rating-filter button {
+        color: white;
+        padding: 9px;
+        cursor: pointer;
+        background-color: #111727;
+        margin: 5px;
+        border: none;
+    }
+
+    .container-testimonials h1 {
+        text-align: center;
+        margin: 50px;
+    }
+
+    .container-testimonials .testimonials {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+
+    .testi-card {
+        background-color: white;
+        border-radius: 9px;
+        overflow: hidden;
+        width: 30%;
+        margin: 0 auto 43px auto;
+        box-shadow: 0 1px 1px rgb(0 0 0 / 11%), 0 2px 2px rgb(0 0 0 / 11%),
+                0 4px 4px rgb(0 0 0 / 11%), 0 6px 8px rgb(0 0 0 / 11%),
+                0 8px 16px rgb(0 0 0 / 11%);
+    }
+
+    .testi-card .image {
+        margin: 12px;
+    }
+
+    .testi-card .image img {
+        width: 100%;
+        height: 282px;
+        border-radius: 8px;
+        object-fit: cover;
+    }
+
+    .testi-card .content p {
+        margin: 0;
+        padding: 13px;
+        text-align: justify;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+        float: right;
+    }
+
+    .footer h4 {
+        margin: 0;
+        padding: 0 13px 13px 0;
+        float: right;
+    }
+}
+
+/* DESKTOP UP */
+@media only screen and (min-width: 1001px) {
+    .container-testimonials {
+        width: 100%;
+        margin-bottom: 500px;
+    }
+
+    .container-testimonials .rating-filter {
+        margin: 0px auto 37px auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    .container-testimonials .rating-filter button {
+        color: white;
+        padding: 9px;
+        cursor: pointer;
+        background-color: #111727;
+        margin: 5px;
+        border: none;
+    }
+
+    .container-testimonials h1 {
+        text-align: center;
+        margin: 50px;
+    }
+
+    .container-testimonials .testimonials {
+        display: flex;
+        flex-direction: row;
+        width: 900px;
+        justify-content: center;
+        margin: auto;
+        flex-wrap: wrap;
+    }
+    
+    .testi-card {
+        background-color: white;
+        border-radius: 9px;
+        overflow: hidden;
+        width: 28%;
+        margin: 10px;
+        box-shadow: 0 1px 1px rgb(0 0 0 / 11%), 0 2px 2px rgb(0 0 0 / 11%),
+                    0 4px 4px rgb(0 0 0 / 11%), 0 6px 8px rgb(0 0 0 / 11%),
+                    0 8px 16px rgb(0 0 0 / 11%);
+    }
+    
+
+    .testi-card .image {
+        margin: 12px;
+    }
+
+    .testi-card .image img {
+        width: 100%;
+        height: 282px;
+        border-radius: 8px;
+        object-fit: cover;
+    }
+
+    .testi-card .content p {
+        margin: 0;
+        padding: 13px;
+        text-align: justify;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+        float: right;
+    }
+
+    .footer h4 {
+        margin: 0;
+        padding: 0 13px 13px 0;
+        float: right;
+        font-weight: bold;
+    }
+}

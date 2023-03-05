@@ -1,0 +1,36 @@
+.list-menu-mobile {
+    margin: 0;
+    transition: .4s;
+}
+
+.list-menu-mobile ul {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.list-menu-mobile ul li {
+    background-color: #f4f3f3;
+    padding: 10px;
+    border: 1px solid #dce0e4;
+}
+
+.list-menu-mobile ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.list-menu-mobile .list-active {
+    background-color: rgb(226, 226, 224);
+}
+
+.btn-menu button:hover {
+    cursor: pointer;
+}
+
+.contact-me-btn a {
+    background-color: #111727;
+    color: white !important;
+    padding: 6px;
+    border-radius: 7px;
+}

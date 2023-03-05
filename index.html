@@ -1,0 +1,133 @@
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Day 8 - HOF & Callback</title>
+        <link rel="stylesheet" href="./assets/css/style.css" />
+        <link rel="stylesheet" href="./assets/css/nav.css" />
+        <link rel="stylesheet" href="./assets/css/hover.css" />
+        <link rel="stylesheet" href="./assets/css/media-query.css" />
+        <link rel="stylesheet" href="./assets/css/list-menu-mobile.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+            integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+    </head>
+    <body>
+        <nav>
+            <div class="nav-left">
+                <ul>
+                    <li>
+                        <a href="/">
+                            <img
+                                class="brand"
+                                src="./assets/images/brand.png"
+                                alt=""
+                            />
+                        </a>
+                    </li>
+                    <li><a href="" class="active">Home</a></li>
+                    <li><a href="blog.html">Project</a></li>
+                    <li><a href="testimonials.html">Testimonials</a></li>
+                </ul>
+            </div>
+            <div class="nav-right">
+                <a href="contact-form.html">Contact me</a>
+            </div>
+            <div class="navbar-mobile" style="display: none">
+                <div class="logo">
+                    <a href="/">
+                        <img
+                            class="brand"
+                            src="./assets/images/brand.png"
+                            alt=""
+                        />
+                    </a>
+                </div>
+                <div class="btn-menu">
+                    <button onclick="showMenu()" id="show-button">
+                        <i class="fa-2x fa-solid fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </nav>
+        <div
+            class="list-menu-mobile"
+            id="list-menu-mobile"
+            style="display: none"
+        >
+            <ul>
+                <li class="list-active"><a href="">Home</a></li>
+                <li><a href="blog.html">My Project</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>
+                <li class="contact-me-btn">
+                    <a href="contact-form.html">Contact Me</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <h1>Hi Welcome to my hut</h1>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                    occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum.
+                </p>
+                <div class="downloads">
+                    <button>
+                        <a class="contact" href="https://google.com">contact</a>
+                    </button>
+                    <div class="download">
+                        <a
+                            href="https://google.com"
+                            style="text-decoration: none; color: black"
+                        >
+                            <span
+                                >download CV<i
+                                    class="fa-solid fa-download"
+                                    style="padding-left: 10px"
+                                ></i
+                            ></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="social-media">
+                    <a href="https://linkedin.com">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://instagram.com">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://facebook.com">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="https://twitter.com">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="card-profile">
+                <img
+                    style="width: 100%"
+                    src="./assets/images/profile.jpg"
+                    alt=""
+                />
+                <div class="card-profile-content">
+                    <h2>Rahman Muhaemin</h2>
+                    <p>Fullstack Developer</p>
+                </div>
+            </div>
+        </div>
+        <script src="./assets/js/menu.js"></script>
+    </body>
+</html>
